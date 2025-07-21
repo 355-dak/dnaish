@@ -1,0 +1,76 @@
+{
+  "header": {
+    "title": "My Resume",
+    "subtitle": "Senior Developer"
+  },
+  "menu": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact",
+    "projects": "Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "content": "Innovative developer with 5+ years of experience building modern web applications. Passionate about clean code and user-centric design."
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "javascript": "JavaScript/TypeScript"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "job1": {
+      "title": "Senior Frontend Developer",
+      "company": "Tech Solutions Inc.",
+      "points": [
+        "Led team of 5 developers in building responsive web applications",
+        "Implemented CI/CD pipeline reducing deployment time by 40%",
+        "Mentored junior developers in React best practices"
+      ]
+    },
+    "job2": {
+      "title": "Web Developer",
+      "company": "Digital Creations",
+      "points": [
+        "Developed 15+ client websites using modern JavaScript frameworks",
+        "Improved site performance scores by 35% through optimization"
+      ]
+    }
+  },
+  "education": {
+    "title": "Education",
+    "degree1": {
+      "title": "Master of Computer Science",
+      "university": "Stanford University",
+      "description": "Specialized in Human-Computer Interaction and Web Technologies"
+    },
+    "degree2": {
+      "title": "Bachelor of Software Engineering",
+      "university": "MIT",
+      "description": "Graduated with Honors (GPA: 3.8/4.0)"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "project1": {
+      "title": "E-Commerce Platform",
+      "description": "Built with React & Node.js",
+      "link": "View Project →"
+    }
+  },
+  "buttons": {
+    "export_pdf": "Export PDF",
+    "save_contact": "Save Contact"
+  }
+}

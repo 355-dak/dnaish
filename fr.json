@@ -1,0 +1,76 @@
+{
+  "header": {
+    "title": "Mon CV",
+    "subtitle": "Développeur Senior"
+  },
+  "menu": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "education": "Éducation",
+    "contact": "Contact",
+    "projects": "Projets"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "content": "Développeur innovant avec plus de 5 ans d'expérience dans la création d'applications web modernes. Passionné par le code propre et le design centré sur l'utilisateur."
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "javascript": "JavaScript/TypeScript"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "job1": {
+      "title": "Développeur Frontend Senior",
+      "company": "Tech Solutions Inc.",
+      "points": [
+        "Dirigé une équipe de 5 développeurs pour créer des applications web responsives",
+        "Mis en place un pipeline CI/CD réduisant le temps de déploiement de 40%",
+        "Encadré des développeurs juniors sur les bonnes pratiques React"
+      ]
+    },
+    "job2": {
+      "title": "Développeur Web",
+      "company": "Digital Creations",
+      "points": [
+        "Développé plus de 15 sites web clients utilisant des frameworks JavaScript modernes",
+        "Amélioré les scores de performance des sites de 35% grâce à l'optimisation"
+      ]
+    }
+  },
+  "education": {
+    "title": "Formation",
+    "degree1": {
+      "title": "Master en Informatique",
+      "university": "Université de Stanford",
+      "description": "Spécialisé en Interaction Homme-Machine et Technologies Web"
+    },
+    "degree2": {
+      "title": "Licence en Génie Logiciel",
+      "university": "MIT",
+      "description": "Diplômé avec mention (GPA: 3.8/4.0)"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer"
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "project1": {
+      "title": "Plateforme E-Commerce",
+      "description": "Construit avec React & Node.js",
+      "link": "Voir le projet →"
+    }
+  },
+  "buttons": {
+    "export_pdf": "Exporter PDF",
+    "save_contact": "Enregistrer contact"
+  }
+}

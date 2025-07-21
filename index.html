@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="header.title">My Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .icon {
+      display: inline-block;
+      width: 24px;
+      text-align: center;
+      font-size: 1.1em;
+      color: var(--primary);
+    }
+    .language-option.active {
+      background: var(--primary);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <button class="mobile-menu-btn" style="display: none;">
+    <i class="fa fa-bars"> ☰ </i>
+  </button>
+  
+
+  <aside class="sidebar">
+    <div class="profile-section">
+      <div class="profile-img">
+        
+      </div>
+      <h1>John Doe</h1>
+      <p data-i18n="header.subtitle">Senior Developer</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#about" class="active"><span class="icon"></span> <span data-i18n="menu.about">About</span></a></li>
+        <li><a href="#skills"><span class="icon"></span> <span data-i18n="menu.skills">Skills</span></a></li>
+        <li><a href="#experience"><span class="icon"></span> <span data-i18n="menu.experience">Experience</span></a></li>
+        <li><a href="#education"><span class="icon"></span> <span data-i18n="menu.education">Education</span></a></li>
+        <li><a href="#contact"><span class="icon"></span> <span data-i18n="menu.contact">Contact</span></a></li>
+        <li><a href="#projects"><span class="icon"></span> <span data-i18n="menu.projects">Projects</span></a></li>
+      </ul>
+    </nav>
+       
+    <div class="language-switcher">
+      <button class="language-option active" data-lang="en">English</button>
+      <button class="language-option" data-lang="fr">Français</button>
+    </div>
+
+    <div class="sidebar-footer">
+      <button id="exportPdf" class="pdf-button">
+        <span class="icon"></span> <span data-i18n="buttons.export_pdf">Export PDF</span>
+      </button>
+
+      <div class="social-media">
+        <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn">
+          <span class="icon"></span> LinkedIn
+        </a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+          <span class="icon"></span> GitHub
+        </a>
+        <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
+          <span class="icon"></span> Twitter
+        </a>
+      </div>
+      <button id="downloadVcard" class="vcard-button">
+        <span class="icon"></span <span data-i18n="buttons.save_contact">Save Contact</span>
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <section id="about" class="card">
+      <h2><span class="icon"></span> <span data-i18n="about.title">About Me</span></h2>
+      <p data-i18n="about.content">Innovative developer with 5+ years of experience...</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2><span class="icon"></span> <span data-i18n="skills.title">Technical Skills</span></h2>
+      <div class="skill">
+        <div class="skill-header">
+          <span data-i18n="skills.javascript">JavaScript/TypeScript</span>
+          <span>90%</span>
+        </div>
+        <div class="progress-bar"><div style="width: 90%"></div></div>
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h2><span class="icon"></span> <span data-i18n="experience.title">Work Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item" data-i18n-dynamic="experience.job1">
+          <div class="timeline-period">2020 - Present</div>
+          <h3>Senior Frontend Developer</h3>
+          <div class="timeline-company">Tech Solutions Inc.</div>
+          <ul class="timeline-description">
+            <li>Led team of 5 developers...</li>
+            <li>Implemented CI/CD pipeline...</li>
+            <li>Mentored junior developers...</li>
+          </ul>
+        </div>
+        <div class="timeline-item" data-i18n-dynamic="experience.job2">
+          <div class="timeline-period">2017 - 2020</div>
+          <h3>Web Developer</h3>
+          <div class="timeline-company">Digital Creations</div>
+          <ul class="timeline-description">
+            <li>Developed 15+ client websites...</li>
+            <li>Improved site performance...</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2><span class="icon"></span> <span data-i18n="education.title">Education</span></h2>
+      <div class="education-item" data-i18n-dynamic="education.degree1">
+        <h3>Master of Computer Science</h3>
+        <div class="education-meta">
+          <span class="education-university">Stanford University</span>
+          <span class="education-year">2015 - 2017</span>
+        </div>
+        <p>Specialized in Human-Computer Interaction...</p>
+      </div>
+      <div class="education-item" data-i18n-dynamic="education.degree2">
+        <h3>Bachelor of Software Engineering</h3>
+        <div class="education-meta">
+          <span class="education-university">MIT</span>
+          <span class="education-year">2011 - 2015</span>
+        </div>
+        <p>Graduated with Honors (GPA: 3.8/4.0)</p>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2><span class="icon"></span> <span data-i18n="contact.title">Contact</span></h2>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name" data-i18n="contact.form.name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" data-i18n="contact.form.email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="contact.form.message">Message</label>
+          <textarea id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" data-i18n="contact.form.submit">Send Message</button>
+      </form>
+    </section>
+
+    <section id="projects" class="card">
+      <h2><span class="icon"></span> <span data-i18n="projects.title">Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card" data-i18n-dynamic="projects.project1">
+          <h3>E-Commerce Platform</h3>
+          <p>Built with React & Node.js</p>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
